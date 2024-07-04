@@ -1,21 +1,28 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #FAF7F2;
+* {
   margin: 0;
   padding: 0;
-  color: #292929;
+  box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-button {
+body {
   font-family: 'Roboto', sans-serif;
-  cursor: pointer;
+  margin-bottom: 100px; 
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  flex-shrink: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
 }

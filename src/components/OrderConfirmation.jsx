@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import '../styles/OrderConfirmation.css';
-import pizzaImage from '../assets/pizzaaa.jpg'; 
+import pizzaImage from '../assets/pizza.jpg'; 
 
 const OrderConfirmation = () => {
   const history = useHistory();
@@ -11,7 +11,7 @@ const OrderConfirmation = () => {
   };
 
   return (
-    <div className="order-confirmation">
+    <main className="order-confirmation">
       <div className="order-confirmation__image-container">
         <img src={pizzaImage} alt="Delicious Pizza" className="order-confirmation__image" />
       </div>
@@ -20,7 +20,7 @@ const OrderConfirmation = () => {
         <p>Siparişiniz başarıyla alındı. Afiyet olsun!</p>
         <button onClick={handleGoHome}>Ana Sayfaya Dön</button>
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -11,7 +11,7 @@
   margin: 2rem auto;
   text-align: center;
   font-family: 'Arial', sans-serif;
-  transition: all 0.3s ease;
+  flex-grow: 1;
 }
 
 .order-confirmation__image-container {
@@ -35,15 +35,12 @@
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: bold;
-  text-transform: uppercase;
-  animation: fadeIn 1s ease-in-out;
 }
 
 .order-confirmation p {
   color: #666;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
-  animation: fadeIn 2s ease-in-out;
 }
 
 .order-confirmation button {
@@ -63,15 +60,4 @@
 .order-confirmation button:hover {
   background-color: #a51d1f;
   transform: scale(1.05);
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

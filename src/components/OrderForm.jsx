@@ -30,7 +30,7 @@ const OrderForm = () => {
     specialInstructions: ''
   });
 
-  const [totalPrice, setTotalPrice] = useState(0); // Initial price for the pizza
+  const [totalPrice, setTotalPrice] = useState(0); 
 
   const history = useHistory();
 
@@ -68,7 +68,7 @@ const OrderForm = () => {
   };
 
   return (
-    <div className="order-form-container">
+    <main className="order-form-container">
       <div className="order-form-image-container">
         <img src={pizzaImage} alt="Delicious Pizza" className="order-form-image" />
       </div>
@@ -128,7 +128,7 @@ const OrderForm = () => {
         <div className="total-price">Toplam Fiyat: {totalPrice} TL</div>
         <button type="submit">Sipariş Ver</button>
       </form>
-    </div>
+    </main>
   );
 };
 

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import OrderForm from './components/OrderForm';
 import OrderConfirmation from './components/OrderConfirmation';
+import Footer from './components/Footer';
 import './styles/App.css';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/order" component={OrderForm} />
         <Route path="/confirmation" component={OrderConfirmation} />
       </Switch>
+      <Footer/>
     </Router>
   );
 };
