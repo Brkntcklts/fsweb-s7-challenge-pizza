@@ -1,14 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 const Header = () => {
   return (
     <header className="header">
-      <h1>Teknolojik Yemekler</h1>
-      <nav>
-        <a href="/">Anasayfa</a>
-        <a href="/order">Sipariş Ver</a>
+      <div className="container">
+        <Link to="/" className="logo">Teknolojik Yemekler</Link>
+        <nav className="nav">
+          <div className="nav-links">
+            <Link to="/">Anasayfa</Link>
+            <Link to="/order">Sipariş Ver</Link>
+            <Link to="/menu">Menü</Link>
+            <Link to="/about">Hakkımızda</Link>
+          </div>
         </nav>
+      </div>
     </header>
   );
 };
