@@ -8,7 +8,7 @@ const Header = () => {
       <nav>
         <a href="/">Anasayfa</a>
         <a href="/order">Sipariş Ver</a>
-      </nav>
+        </nav>
     </header>
   );
 };
